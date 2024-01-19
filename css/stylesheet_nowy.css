@@ -1,0 +1,859 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@500&family=Montserrat:ital,wght@1,500&display=swap');
+@import "compass/css3";
+@import "compass/utilities/general/clearfix";
+
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    font-family: "Geologica";
+}
+
+*, *:before, *:after {
+  
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;
+
+  }
+
+body {
+    
+    min-height: 100%;
+    width: 100%;
+    position: relative;
+    font-family: "Geologica";
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* NAVBAR */
+
+.header {
+  /* border: 2px solid red; */
+  font-family: "Geologica", sans-serif;
+  width: 100%;
+  height: fit-content;
+  background-color: rgba(0, 0, 0, 0.828);
+  /* position: fixed; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 2%;
+}
+
+.hamburger {
+  display: none;
+}
+
+.nav__links ul{
+    display: flex;
+    list-style: none;
+  }
+
+.nav__links ul li a{
+  display: block;
+  margin-left: 15px;
+  float: left;
+  text-align: center;
+  /* border: 2px solid red; */
+  transition: all 0.3s ease 0s;
+  color: #777;
+  font-size: 3.75vh;
+  font-family: 'Geologica';
+  font-size: 25px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.nav__links ul li a:hover {
+  color: white;
+}
+
+.logo {
+    /* border: 2px solid yellow; */
+    color: white;
+    cursor: pointer;
+}
+
+.logo img {
+  /* border: 2px solid red; */
+  height: 80px;
+  width: 450px;
+}
+
+.nav__links a.active{
+  color: white;
+}
+
+@media only screen and (max-width: 1320px) {
+  .header {
+    padding: 0 50px;
+  }
+
+  .nav__links ul li a{
+    font-size: 25px;
+  }
+  
+}
+
+@media only screen and (max-width: 1100px) {
+  .header {
+    padding: 0 30px;
+  }
+
+  .nav__links ul li a{
+    font-size: 20px;
+  }
+
+}
+
+@media only screen and (max-width: 900px) {
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburger .line {
+    width: 30px;
+    height: 3px;
+    background: #fefefe;
+    margin: 6px 0;
+  }
+
+  .header {
+    /* border: 2px solid blue; */
+    height: 80px;
+  }
+
+  .logo img {
+    content: "../logo/icon_final.png";
+    height: 60px;
+    width: 60px;
+  }
+
+  .nav__links {
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    height: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.828);
+    transition: 0.3 ease;
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  .nav__links.active {
+    /* border: 2px solid red; */
+    height: 450px;
+  }
+
+  .nav__links.active ul {
+    opacity: 1;
+    /* border: 2px solid blue; */
+  }
+
+  .nav__links ul {
+    /* border: 2px solid green; */
+    display: block;
+    width: fit-content;
+    margin: 80px auto 0 auto;
+    text-align: center;
+    transition: 0.5s;
+    opacity: 0;
+  }
+
+  .nav__links ul li a{
+    margin-bottom: 12px;
+    font-size: 25px;
+    /* border: 2px solid red; */
+  }
+}
+
+/* END OF NAVBAR */
+
+/* hero background image */
+.mainimage {
+    position: relative;
+    height: 10vh;
+    width: 90%;
+    background: url('');
+    background-size: 100vw 100vh;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.hero_desc {
+    position: relative;
+    font-size: 1.5rem;
+}
+
+
+
+/* SLIDES */
+
+.container1 {
+    /* border: 2px solid red; */
+    position: relative;
+    width: 90vw;
+    height: 750px;
+    overflow: hidden;
+}
+
+.container1 .slide {
+    /* border: 2px solid green; */
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    right: -100%;
+    /* margin-left: 60px; */
+    position: absolute;
+    overflow: hidden;
+}
+
+.container1 .slide.active {
+    /* margin-left: 60px; */
+    right: 0;
+}
+
+.container1 .slide img {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.container1 .slide .info {
+    position: absolute;
+    align-items: center;
+    left: 25px;
+    top: 560px;
+    padding: 15px 30px;
+    color: white;
+}
+
+.container1 .slide .info h2 {
+    color: white;
+    font-size: 60px;
+    text-transform: uppercase;
+    animation: 5s infinite;
+}
+
+.container1 .navigation {
+    z-index: 2;
+    height: 60px;
+    width: 150px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.9;
+}
+
+.container1 .navigation .btn {
+    background: rgba(163, 145, 145, 0.73);
+    width: 12px;
+    height: 25px;
+    margin: 10px;
+    border-radius: 50%;
+    color: black;
+    cursor: pointer;
+}
+
+.container1 .navigation .btn:hover {
+    background-color: #C0DCEA;
+}
+
+.container1 .navigation .btn.active {
+    background: #96AEBA;
+    border: #96AEBA;
+}
+
+@media (max-width: 620px) {
+    .img-slider {
+        width: 400px;
+        height: 250px;
+    }
+
+    .container1 .slide .info {
+        padding: 10px 25px;
+    }
+
+    .container1 .slide .info h2 {
+        font-size: 35px;
+    }
+
+    .container1 .slide .info p {
+        width: 70%;
+        font-size: 15px;
+    }
+
+    .container1 .navigation {
+        bottom: 25px;
+    }
+
+    .container1 .navigation .btn {
+        width: 10px;
+        height: 10px;
+        margin: 8px;
+    }
+}
+
+/* END OF SLIDES */
+
+
+/* GALERIA */
+.container_gallery {
+    width: 100%;
+    height: 100%;
+}
+
+.trans {
+    transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+}
+
+.top {
+    /* border: 2px solid red; */
+    width: 88vw;
+    height: 620vh;
+    margin-top: 2vh;
+    margin-right: 20px;
+    margin-bottom: 10vh;
+}
+
+.top ul{
+    /* border: 2px solid black; */
+    list-style: none;
+    width: 88vw;
+    height: 100%;
+    z-index: 1;
+    /* margin-left: 40px; */
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top ul li{
+    /* border: 2px solid green; */
+    position: relative;
+    float: left;
+    width: 40vw;
+    height: 40vh;
+    /* width: 40%;
+    height: 10%; */
+    overflow: hidden;
+    margin: 20px;
+}
+
+.top ul li::before
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  content: '';
+  color: white;
+  opacity: 0.4;
+  text-align: center;
+  box-sizing: border-box;
+  pointer-events: none;
+  transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+}
+
+.top ul li:hover::before {
+  opacity: 0;
+  background-color: rgba(0,0,0,0.90);
+}
+
+.top ul li img
+{
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Style the Image used to Trigger the Modal */
+.myImage {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* The Modal Background */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 75%;
+    height: 75vh;
+    object-fit: fill;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width:900px) {
+
+    .container_gallery {
+        /* border: 2px solid green; */
+        width: 100%;
+        height: auto;
+    }
+
+    .top {
+        /* border: 2px solid red; */
+        width: 90vw;
+        height: 100%;
+        margin-top: 2vh;
+        /* margin-left: 20px;
+        margin-right: 20px; */
+        margin-bottom: 10vh;
+    }    
+
+    .top ul{
+        /* border: 2px solid black; */
+        list-style: none;
+        width: 90vw;
+        height: 1400vh;
+        z-index: 1;
+        box-sizing: border-box;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    .top ul li{
+        /* border: 2px solid green; */
+        position: relative;
+        float: left;
+        width: 75vw;
+        height: 45vh;
+        overflow: hidden;
+    }
+
+    .top ul li img{
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    overflow: hidden;
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 90%;
+    height: 45vh;
+    object-fit: fill;
+}
+
+.lightbox {
+    /* border: 2px solid yellow; */
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.75);
+  z-index: 999;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.lightbox img {
+    /* border: 2px solid yellow; */
+  max-width: 90%;
+  max-height: 80%;
+  /* position: relative; */
+  position: relative;
+  top: -100%;
+  /* Transition */
+  transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+}
+
+
+}
+
+/* KONIEC GALERII  */
+
+
+/* FOOTER */
+
+#footer {
+  /* border: 2px solid red; */
+    width: 100%;
+    height: fit-content;
+    background: rgb(135,143,175);
+    background-color: rgba(0, 0, 0, 0.828);
+  }
+  
+  .container-footer {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+  }
+  
+  .row_f_2 {
+    /* border: 2px solid purple; */
+    height: 100%;
+    width: auto;
+  }
+  
+  .row_f_2 h3{
+    /* border: 2px solid green; */
+    width: 100%;
+    height: auto;
+    font-size: 25px;
+    color: white;
+    margin-left: 13px;
+    margin-top: 10px;
+  }
+  
+  .row_f_1 {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    height: 270px;
+    width: 400px;
+  }
+  
+  .row_f_1 h3{
+    /* border: 2px solid green; */
+    width: 100%;
+    height: 35px;
+    font-size: 25px;
+    color: white;
+    margin-left: 13px;
+    margin-top: 10px;
+  }
+  
+  .row_f_2 p{
+    /* border: 2px solid pink; */
+    width: 280px;
+    height: fit-content;
+    font-size: 20px;
+    /* margin-right: 120px; */
+    margin-left: 15px;
+    /* margin-bottom: 100px; */
+    color: white;
+  }
+  
+  .text-box1{
+    /* border: 2px solid orange; */
+    margin-bottom: 125px;
+    width: 340px;
+    height: 220px;
+    /* font-size: px; */
+    color: white;
+  }
+  
+  .text-box1 li{
+    /* border: 2px solid green; */
+    list-style: none;
+    font-size: 21px;
+    height: auto;
+    color: white;
+    /* z-index: 1; */
+    margin: 13.5px;
+    margin-right: 30px;
+    /* margin-top: 11px; */
+    width: 315px;
+  }
+  
+  .Icons {
+    /* border: 2px solid white; */
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 220px;
+    width: 45px;
+    /* z-index: 1; */
+    margin-left: 5px;
+  }
+  
+  .servicesIcon {
+    /* border: 2px solid red; */
+    color: white;
+    height: 30px;
+    width: 30px;
+    font-size: 32px;
+    margin: 0px;
+    margin-top: 15px;
+    margin-left: 10px;
+    /* z-index: 1; */
+    cursor: pointer;
+  }
+  
+  @media only screen and (max-width: 900px),
+  screen and (max-height: 900px) {
+#footer {
+width: 100%;
+height: 28vh;
+background: rgb(135,143,175);
+background-color: rgba(0, 0, 0, 0.828);
+}
+
+.container-footer {
+/* border: 2px solid rgba(0, 0, 0, 0.828); */
+display: flex;
+justify-content: space-evenly;
+align-items: first baseline;
+width: auto;
+height: 100%;
+}
+
+.row_f_2 {
+/* border: 2px solid purple; */
+height: auto;
+width: auto;
+}
+
+.row_f_2 h3{
+/* border: 2px solid green; */
+width: 200px;
+height: auto;
+font-size: 16px;
+color: white;
+margin-left: 13px;
+margin-top: 10px;
+}
+
+.row_f_1 {
+/* border: 2px solid rgba(0, 0, 0, 0.828); */
+display: flex;
+flex-wrap: wrap;
+height: 220px;
+width: 320px;
+}
+
+.row_f_1 h3{
+/* border: 2px solid green; */
+width: 100%;
+height: 25px;
+font-size: 16px;
+color: white;
+margin-left: 13px;
+margin-top: 10px;
+}
+
+.row_f_2 p{
+/* border: 2px solid pink; */
+width: 200px;
+height: auto;
+font-size: 15px;
+/* margin-right: 120px; */
+margin-left: 15px;
+/* margin-bottom: 100px; */
+color: white;
+}
+
+.text-box1{
+/* border: 2px solid orange; */
+margin-bottom: 125px;
+width: 235px;
+height: 150px;
+/* font-size: px; */
+color: white;
+}
+
+.text-box1 li{
+/* border: 2px solid green; */
+list-style: none;
+font-size: 15px;
+height: auto;
+color: white;
+z-index: 1;
+margin: 8px;
+margin-right: 30px;
+/* margin-top: 11px; */
+width: 230px;
+}
+
+.Icons {
+/* border: 2px solid white; */
+display: flex;
+flex-direction: column;
+width: 35px;
+height: 150px;
+/* z-index: 1; */
+margin-left: 5px;
+}
+
+.servicesIcon {
+/* border: 2px solid red; */
+color: white;
+height: 20px;
+width: 20px;
+font-size: 19px;
+margin: 6px;
+margin-left: 10px;
+cursor: pointer;
+}
+}
+  
+/* KONTAKT I LOKALIZACJA */
+
+.contact {
+    /* border: 2px solid red; */
+    width: 100%;
+    height: fit-content;
+}
+
+.container-contact {
+    /* border: 2px solid yellow; */
+    width: 100%;    
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.text-box {
+    /* border: 2px solid black; */
+    width: fit-content;
+}
+
+.text-box h1{
+    /* border: 2px solid green; */
+    font-size: 55px;
+}
+
+.text-box ul li{
+    /* border: 2px solid purple; */
+    width: fit-content;
+    font-size: 35px;
+    font-weight: 590;
+} 
+
+.container-contact .google-map {
+    /* border: 2px solid green; */
+    width: 650px;
+    height: 650px;
+}
+
+@media only screen and (max-width: 900px) {
+
+    .contact {
+      /* border: 2px solid red; */
+      width: 100%;
+      height: fit-content;
+    }
+
+    .container-contact {
+        /* border: 2px solid yellow; */
+        width: 100%;  
+        height: fit-content;  
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .text-box {
+        /* border: 2px solid black; */
+        width: fit-content;
+        height: 200px;
+    }
+    
+    .text-box h1{
+        /* border: 2px solid green; */
+        font-size: 35px;
+        width: 100%;
+    }
+    
+    .text-box ul li{
+        /* border: 2px solid purple; */
+        font-family: 'Geologica';
+        width: 300px;
+        font-size: 20px;
+    } 
+    
+    .contact .container-contact .google-map {
+        /* border: 2px solid green; */
+        width: 325px;
+        height: 275px;
+    }    
+}
+
+/* KONIEC KONTAKT I LOKALIZACJA */
+
+
+
