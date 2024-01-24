@@ -684,23 +684,24 @@ body {
       /* border: 2px solid purple; */
       height: auto;
       width: 180px;
+      height: 180px;
     }
   
     .row_f_2 h3{
       /* border: 2px solid green; */
-      width: 200px;
+      width: 160px;
       height: auto;
-      font-size: 16px;
+      font-size: 14px;
       color: white;
-      margin-left: 13px;
-      margin-top: 10px;
+      /* margin-left: 13px; */
+      /* margin-top: 10px; */
     }
   
     .row_f_1 {
       /* border: 2px solid red; */
       display: flex;
       flex-wrap: wrap;
-      height: 220px;
+      height: 180px;
       width: 320px;
     }
   
@@ -708,7 +709,7 @@ body {
       /* border: 2px solid green; */
       width: 100%;
       height: 25px;
-      font-size: 16px;
+      font-size: 14px;
       color: white;
       margin-left: 13px;
       /* margin-top: 10px; */
@@ -754,6 +755,7 @@ body {
       flex-direction: column;
       width: 25px;
       height: 120px;
+      gap: 0px;
       /* z-index: 1; */
     }
     
@@ -768,7 +770,7 @@ body {
       cursor: pointer;
     }
   }
-    
+      
 /* KONTAKT I LOKALIZACJA */
 
 .contact {
