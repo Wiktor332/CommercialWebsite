@@ -709,13 +709,14 @@ article img {
   flex-wrap: wrap;
   flex-direction: column;
   width: 100%;
+  text-align: center;
+
 }
 
 .text-box .other li{
   /* border: 2px solid red; */
   font-size: 20px;
   padding: 10px;
-  text-align: center;
 }
 
 .container2 .text-box {
