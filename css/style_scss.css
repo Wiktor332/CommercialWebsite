@@ -213,7 +213,7 @@ body {
   .hero_desc {
     /* border: 2px solid red; */
     position: relative;
-    font-size: 15px;
+    font-size: 14px;
   }
 }
 
@@ -951,7 +951,7 @@ article img {
   .text-box1{
     /* border: 2px solid orange; */
     margin-bottom: 125px;
-    width: 150px;
+    width: 120px;
     height: 130px;
     /* font-size: px; */
     color: white;
