@@ -951,7 +951,7 @@ article img {
   .text-box1{
     /* border: 2px solid orange; */
     margin-bottom: 125px;
-    width: 165px;
+    width: 150px;
     height: 130px;
     /* font-size: px; */
     color: white;
@@ -960,14 +960,14 @@ article img {
   .text-box1 li{
     /* border: 2px solid green; */
     list-style: none;
-    font-size: 10px;
+    font-size: 9px;
     height: auto;
     color: white;
     z-index: 1;
     margin: 8px;
     margin-right: 30px;
     /* margin-top: 11px; */
-    width: 170px;
+    width: 150px;
   }
   
   .Icons {

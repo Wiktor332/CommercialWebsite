@@ -133,7 +133,7 @@ body {
   }
 
   .logo img {
-    content: "../logo/icon_final.png";
+    content: url("../logo/icon_final.png");
     height: 60px;
     width: 60px;
   }
@@ -827,25 +827,28 @@ cursor: pointer;
         justify-content: space-evenly;
     }
 
-    .text-box {
-        /* border: 2px solid black; */
-        width: fit-content;
-        height: 200px;
+    .text-box1{
+      /* border: 2px solid orange; */
+      margin-bottom: 125px;
+      width: 150px;
+      height: 130px;
+      /* font-size: px; */
+      color: white;
     }
     
-    .text-box h1{
-        /* border: 2px solid green; */
-        font-size: 35px;
-        width: 100%;
+    .text-box1 li{
+      /* border: 2px solid green; */
+      list-style: none;
+      font-size: 9px;
+      height: auto;
+      color: white;
+      z-index: 1;
+      margin: 8px;
+      margin-right: 30px;
+      /* margin-top: 11px; */
+      width: 150px;
     }
-    
-    .text-box ul li{
-        /* border: 2px solid purple; */
-        font-family: 'Geologica';
-        width: 300px;
-        font-size: 20px;
-    } 
-    
+      
     .contact .container-contact .google-map {
         /* border: 2px solid green; */
         width: 325px;
