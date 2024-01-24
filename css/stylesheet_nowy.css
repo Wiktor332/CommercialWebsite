@@ -831,7 +831,7 @@ cursor: pointer;
       /* border: 2px solid orange; */
       margin-bottom: 125px;
       width: 150px;
-      height: 130px;
+      height: 120px;
       /* font-size: px; */
       color: white;
     }
@@ -846,7 +846,7 @@ cursor: pointer;
       margin: 8px;
       margin-right: 30px;
       /* margin-top: 11px; */
-      width: 150px;
+      width: 120px;
     }
       
     .contact .container-contact .google-map {
