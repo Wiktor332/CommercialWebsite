@@ -708,6 +708,7 @@ article img {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  width: 100%;
 }
 
 .text-box .other li{
