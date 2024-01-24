@@ -708,12 +708,14 @@ article img {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  
 }
 
 .text-box .other li{
   /* border: 2px solid red; */
   font-size: 20px;
   padding: 10px;
+  left: -50%;
 }
 
 .container2 .text-box {
