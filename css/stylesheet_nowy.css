@@ -681,13 +681,11 @@ body {
     }
   
     .row_f_2 {
-      /* border: 2px solid purple; */
       height: auto;
       width: 180px;
     }
   
     .row_f_2 h3{
-      /* border: 2px solid green; */
       width: 160px;
       height: auto;
       font-size: 14px;
@@ -697,7 +695,6 @@ body {
     }
   
     .row_f_1 {
-      /* border: 2px solid red; */
       display: flex;
       flex-wrap: wrap;
       height: 220px;
@@ -810,7 +807,6 @@ body {
 }
 
 @media only screen and (max-width: 900px) {
-
 
   .text-box h1{
     /* border: 2px solid green; */
