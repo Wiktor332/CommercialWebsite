@@ -866,6 +866,16 @@ article img {
   color: white;
 }
 
+.copyright {
+  width: 100%;
+}
+
+.copyright p{
+  font-size: 20px;
+  color: white;
+  width: 100%;
+}
+
 .text-box1{
   /* border: 2px solid orange; */
   margin-bottom: 125px;
@@ -968,6 +978,12 @@ article img {
     /* margin-bottom: 100px; */
     color: white;
   }
+
+  .copyright p{
+    font-size: 13px;
+    color: white;
+    width: 100%;
+  }  
   
   .text-box1{
     /* border: 2px solid orange; */
