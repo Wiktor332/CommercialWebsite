@@ -708,9 +708,6 @@ article img {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  /* width: 100%;
-  text-align: center; */
-
 }
 
 .text-box .other li{
