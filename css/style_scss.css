@@ -613,8 +613,8 @@ article img {
   display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
-  /* align-items: center; */
   align-content: center;
+  text-align: center;
   justify-content: space-evenly;
   /* gap: 20px; */
 }
