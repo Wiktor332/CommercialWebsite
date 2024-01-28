@@ -576,7 +576,7 @@ body {
   .row_f_2 {
     /* border: 2px solid purple; */
     height: 260px;
-    width: auto;
+    width: fit-content;
   }
   
   .row_f_2 h3{
