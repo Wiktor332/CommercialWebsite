@@ -249,10 +249,9 @@ article {
   position: relative;
 }
 article img {
-  width: 100%;
+  width: 75vw;
   height: 75vh;
-  image-rendering: optimizeQuality;
-  object-fit: fill;
+  object-fit: cover;
 }
 
 
