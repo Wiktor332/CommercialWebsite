@@ -490,7 +490,6 @@ body {
     .top ul li{
         /* border: 2px solid green; */
         position: relative;
-        float: left;
         width: 75vw;
         height: 45vh;
         overflow: hidden;
@@ -500,7 +499,7 @@ body {
     /* border: 2px solid red; */
     width: 100%;
     height: 100%;
-    object-fit: fill;
+    object-fit: cover;
     overflow: hidden;
 }
 
